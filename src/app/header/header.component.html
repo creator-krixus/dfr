@@ -14,7 +14,9 @@
 			</ul>
 	</div>
 	<div class="header__nav" *ngIf="screenWidth <= 768">
-		<img class="header__nav--image" src="../../assets/bars-solid.svg" alt="bars">
+		<img *ngIf="view" class="header__nav--image" src="../../assets/xmark-solid.svg" alt="bars" (click)="show()">
+		<img *ngIf="!view" class="header__nav--image" src="../../assets/bars-solid.svg" alt="bars" (click)="show()">
 	</div>
 </div>
+<app-sidebar *ngIf="view"></app-sidebar>
 <router-outlet></router-outlet>

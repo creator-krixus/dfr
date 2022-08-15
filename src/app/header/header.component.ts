@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 	constructor() {}
+	public view: boolean = false;
 	public screenWidth: any;
 	ngOnInit(): void {
 		this.screenWidth = window.innerWidth;
+	}
+	public show() {
+		this.view = !this.view;
 	}
 }
