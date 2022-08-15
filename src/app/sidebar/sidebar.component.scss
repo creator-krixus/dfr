@@ -1,10 +1,17 @@
 .sidebar{
-	width: 200px;
-	background-color: blue;
-	height: 50vh;
-	// position: absolute;
+	padding: 3px;
+	background-color: #000;
+	height: max-content;
+	border-top: 2px solid orangered;
 	&__list{
 		display: grid;
 		grid-template-rows: auto;
+		padding: 0;
+		&--items{
+			font-size: 20px;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+		}
 	}
 }

@@ -2,6 +2,7 @@
   display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	background-color: #000;
+	height: 50px;
 	&__logo{
 		padding: 5px 15px;
 		&--image{
