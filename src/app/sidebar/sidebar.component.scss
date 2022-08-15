@@ -1,0 +1,10 @@
+.sidebar{
+	width: 200px;
+	background-color: blue;
+	height: 50vh;
+	// position: absolute;
+	&__list{
+		display: grid;
+		grid-template-rows: auto;
+	}
+}

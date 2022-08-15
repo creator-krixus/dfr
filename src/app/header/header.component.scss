@@ -1,0 +1,34 @@
+.header{
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: #000;
+	&__logo{
+		padding: 5px 15px;
+		&--image{
+			width: 30px;
+			cursor: pointer;
+		}
+	}
+	&__nav{
+		text-align: end;
+		padding: 5px 15px;
+		&--list{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		}
+		&--items{
+			color: #fff;
+			text-decoration: none;
+			list-style: none;
+			cursor: pointer;
+		}
+		&--image{
+			width: 30px;
+			cursor: pointer;
+		}
+	}
+	.saludo{
+height: 400px;
+background-color: red;
+	}
+}
