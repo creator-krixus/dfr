@@ -1,7 +1,7 @@
 .sidebar{
-	padding: 3px;
+	// padding: 3px;
 	background-color: #000;
-	height: max-content;
+	height: 100vh;
 	border-top: 2px solid orangered;
 	&__list{
 		display: grid;
@@ -12,6 +12,31 @@
 			color: #fff;
 			text-align: center;
 			text-decoration: none;
+			padding: 20px;
+		}
+		&--gap{
+			height: 3px;
+			background-color: orangered;
+			width: 180px;
+			margin: 0 auto;
+		}
+	}
+	&__networks{
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		:nth-child(1){
+			margin-left: 80%;
+		}
+		:nth-child(2){
+			width: 17px;
+		}
+		:nth-child(3){
+			margin-right: 80%;
+		}
+		&--icons{
+			width: 25px;
+			margin: 0 auto;
 		}
 	}
 }
